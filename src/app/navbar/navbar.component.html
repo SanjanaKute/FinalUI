@@ -1,0 +1,23 @@
+
+<mat-toolbar  color="primary">
+    <span><mat-icon>directions_transit</mat-icon>GoTrippee</span> 
+             
+
+    <div class="spacer"></div> 
+    
+      <a mat-button routerLink="home"><mat-icon>home</mat-icon></a>
+      <a mat-button routerLink="traindetails">Train Details</a>
+      <a mat-button routerLink="adminsignup">Admin Login</a>
+      <a mat-button routerLink="aboutus">About Us</a>
+
+      <a *ngIf="!loggedIn" mat-button routerLink="register" mat-button>Register</a>
+      <a *ngIf="!loggedIn" mat-raised-button color="warn" routerLink="signup">Sing Up</a>
+      <a *ngIf="loggedIn" (click) ="logoutUser()" mat-button ><mat-icon>exit_to_app</mat-icon></a>
+
+
+     
+      <a  *ngIf="loggedInn" (click) ="logoutAdmin()" mat-button ><mat-icon>exit_to_app</mat-icon></a>
+
+<!--       <a mat-button><mat-icon>share</mat-icon></a>
+ --></mat-toolbar>
+ 

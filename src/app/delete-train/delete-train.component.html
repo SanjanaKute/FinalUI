@@ -1,0 +1,14 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Add your Id number</h3>
+    <form (ngSubmit)="onSubmit()">
+
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>ID</mat-label>
+        <input type="text"
+        [(ngModel)]="train.trainid" required 
+        name="trainid" matInput/>
+    </mat-form-field>
+
+    <button class="btn btn-success" type="submit">Delete</button>
+    </form>
+</div>

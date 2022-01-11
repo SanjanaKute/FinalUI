@@ -1,0 +1,62 @@
+<div class="background">
+<div class="bootstrap-wrapper">
+    <div class="container mt">
+        <div class="row">
+            <div class="col-md-6 offset-md-3" >
+                <div class="container text-center" >
+                    <img class="img-fluid" style="width:300px" src="/assets/userlogin.png" alt="">
+                </div>
+            <h1 class="text-center">Register Now</h1>
+            
+            <!-- form creation -->
+                <form (ngSubmit)="onSubmit()">
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>UserName</mat-label>
+                        <input 
+                        [(ngModel)]="credentials.username"
+                        required 
+                        name="username"
+                        type="text" matInput/>
+                    </mat-form-field>
+                    <!-- email -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>EmailID</mat-label>
+                        <input 
+                        required 
+                        type="email" matInput/>
+                    </mat-form-field>
+                    <!-- email -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Password</mat-label>
+                        
+                        <input 
+                        [(ngModel)]="credentials.password"
+                        required 
+                        name="username"
+                        type="password" matInput/>
+                    </mat-form-field>
+                    <!-- re-enter password -->
+                    <mat-form-field class="full-width" appearance="outline">
+                        
+                        
+                        <mat-label>Password</mat-label>
+                        <input 
+                        
+                        type=" password" matInput/>
+                    </mat-form-field>
+
+
+
+                    <div class="container text-center">
+                        <button type="submit" mat-raised-button color="primary">Register</button>
+                        <button style="margin-left: 10px;" type="reset" mat-raised-button color="warn">Reset</button>
+                    </div>
+                </form>
+                <br>
+<!--                 <p class="mt" >{{credentials | json}}</p>
+ -->        </div>
+    </div>
+    </div>
+</div>
+</div>
+

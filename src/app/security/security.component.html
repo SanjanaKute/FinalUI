@@ -1,0 +1,40 @@
+<div class="col-md-6 offset-md-3">
+<h3>Add New Train</h3>
+
+    <form (ngSubmit)="onSubmit()">
+
+        <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Train Id</mat-label>
+        <input type="text"
+        [(ngModel)]="train.trainid" required 
+        name="trainid" matInput/>
+        
+        </mat-form-field>
+    
+        <mat-form-field class="full-width" appearance="outline">
+        <mat-label>TrainName</mat-label>
+        <input type="text"
+        [(ngModel)]="train.trainName" required 
+        name="trainName" matInput/>
+        
+        </mat-form-field>
+        
+        <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Start Station</mat-label>
+        <input type="text"
+        [(ngModel)]="train.startStation" required 
+        name="startStation" matInput/>
+        </mat-form-field>
+
+        <mat-form-field class="full-width" appearance="outline">
+        <mat-label>End Station</mat-label>
+        <input type="text"
+        [(ngModel)]="train.endStation" required 
+        name="endStation" matInput/>
+        </mat-form-field>
+
+        <button class="btn btn-success" type="submit">Add Train</button>
+        </form>
+    </div>
+  
+  

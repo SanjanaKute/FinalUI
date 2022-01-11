@@ -1,0 +1,41 @@
+<div class="bootstrap-wrapper">
+    <div class="container text-center mt">
+        <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+            <mat-icon *ngIf="!sidenav.opened">
+                menu
+            </mat-icon>
+            <mat-icon *ngIf="sidenav.opened">
+                close
+            </mat-icon>
+        </button>  
+
+    </div>
+</div>
+
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav">
+        <img class="avtar mat-elevation-z8" src="../assets/user-icon1.png">
+
+        <button mat-button class="menu-button">
+            <mat-icon>home</mat-icon>
+            <span routerLink="home">Home</span>
+        
+
+
+        </button><button mat-button class="menu-button">
+            <mat-icon>info</mat-icon>
+            <span routerLink="aboutus">About</span>
+        </button>
+
+    </mat-sidenav>
+
+    
+    <mat-sidenav-content>
+        <div class="container text-center">
+
+            <button (click)="goto('bookingPage')"  type="book" mat-raised-button color="accent">Book Tickets</button>
+            <button (click)="goto1('deletePage')" style="margin-left: 10px;" type="reset" mat-raised-button color="warn">Delete Reservation</button>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

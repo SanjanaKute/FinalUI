@@ -1,0 +1,63 @@
+<!-- <app-dashboard></app-dashboard>
+    
+ -->
+ <div class="body">
+ <div class="col-md-6 offset-md-3">
+    
+<h3> Add your details</h3>
+<form (ngSubmit)="onSubmit()">
+
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>ID</mat-label>
+        <input type="number"
+        [(ngModel)]="user.id" required 
+        name="text" matInput/>
+    </mat-form-field>
+
+
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>No Of Tickets</mat-label>
+        <input type="number" 
+        [(ngModel)]="user.noOfTickets" required 
+         name="nooftickets" matInput/>
+        </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Adults</mat-label>
+        <input type="number"  
+        [(ngModel)]="user.adults" required 
+        name="adults" matInput/>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Age</mat-label>
+        <input type="number"  
+        [(ngModel)]="user.age" required
+         name="age" matInput/>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Childrens</mat-label>
+        <input type="number"  
+        [(ngModel)]="user.childrens" required 
+        name="childrens" matInput/>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Start Station</mat-label>
+        <input type="text"  
+        [(ngModel)]="user.startStation" required 
+        name="startStation" matInput/>
+    </mat-form-field>
+
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>End Station</mat-label>
+        <input type="text"  
+        [(ngModel)]="user.endStation" required 
+        name="endStation" matInput/>
+    </mat-form-field>
+
+    <button class="btn btn-success" type="submit">Book Now</button>
+</form>
+</div> 
+ </div>

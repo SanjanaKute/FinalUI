@@ -1,0 +1,25 @@
+<button (click)=" getTicketDetails()" mat-raised-button color="primary">View Reservation</button>
+
+<table  class= "table table-striped">
+    <thead>
+        <tr>
+            <th>Reservation Id</th>
+            <th>Number of Tickets</th>
+            <th>Adults</th>
+            <th>Age</th>
+            <th>Start Station</th>
+            <th>End Station</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let train of ticket">
+            <td> {{ train.id }}</td>
+            <td> {{ train.noOfTickets }}</td>
+            <td> {{ train.adults }}</td>
+            <td> {{ train.age }}</td>
+            <td> {{ train.startStation }}</td>
+            <td> {{ train.endStation }}</td>
+        </tr>
+    </tbody>
+</table>

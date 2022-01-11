@@ -1,0 +1,122 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+ 
+  
+
+      <div class="container">
+        <form>
+        
+         
+              <h3>Payment</h3>
+              <label for="fname">Accepted Cards</label>
+              <div class="icon-container">
+                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                <i class="fa fa-cc-discover" style="color:orange;"></i>
+              </div>
+              <label for="cname">Name on Card</label>
+              <input type="text" id="cname"  name="cardname" placeholder="John More Doe">
+              <label for="ccnum">Credit card number</label>
+              <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+              <label for="expmonth">Exp Month</label>
+              <input type="text" id="expmonth" name="expmonth" placeholder="08">
+              <div class="row">
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input type="text" id="expyear" name="expyear" placeholder="2024">
+                </div>
+                <div class="col-50">
+                  <label for="cvv">CVV</label>
+                  <input type="text" id="cvv" name="cvv" placeholder="352">
+                </div>
+             
+            
+          </div>
+          <input  type="submit" value="SUBMIT" class="btn" (click)="thankyou()">
+        </form>
+      </div>
+   </body>
+ 
+     <!-- <mat-form-field class="full-width" appearance="outline">
+         <mat-label>Card Number</mat-label>
+         <input type="number"  
+         [(ngModel)]="payment.paymentStatus" required 
+         name="adults" matInput/>
+     </mat-form-field>
+ 
+ 
+     <mat-form-field class="full-width" appearance="outline">
+         <mat-label>CVV Number</mat-label>
+         <input type="number"  
+         [(ngModel)]="payment.txId" required 
+         name="childrens" matInput/>
+     </mat-form-field> -->
+ 
+     
+ 
+     <!-- <button class="btn btn-success" type="submit">Pay Now</button>
+ </form>
+ </div> 
+  </div> -->
+<!--  
+<section class="header">
+  <div class="container">
+
+      <h1>Confirm Your Payment</h1>
+      <form style="margin-left:30%; font-weight: bold; height: 450px; width: 500px;
+    border-radius: 20px; " >
+        <div class="form-group">
+          <label>Reservation Id:</label>
+          <br>
+          <input type="rId" formControlName="rId" name="rId" id="rId" autocomplete="off" placeholder="Reservation Id name" required><br>
+          <span  class="text-danger">Reservation id is required</span>
+      </div>
+        <div class="form-group">
+          <label>Card Holder Name:</label>
+          <br>
+          <input type="name" formControlName="name" name="name" id="name" autocomplete="off" placeholder="Card Holder name" required><br>
+          <span  class="text-danger">Card Holder is required</span>
+      </div>
+      <div class="form-group">
+        <label>Card Number</label>
+        <br>
+        <input type="cardnumber" formControlName="cardnumber" name="cardnumber" id="cardnumber" autocomplete="off" placeholder="card-number" required><br>
+        <span  class="text-danger">card-number is required</span>
+    </div>
+         <div class="row">
+           <div class="col-lg-4">
+           
+           <div class="form-group" style=" margin-left: 50px; ">
+            <label>Exp Date</label>
+            <br>
+            <input type="date" formControlName="exp" name="Exp" id="Exp" autocomplete="off" placeholder="Exp date" required><br>
+         
+           <span  class="text-danger">expiration Date is required</span>
+          </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="form-group" style=" margin-left: 70px;">
+              <label>CVV</label>
+              <br>
+              <input type="CVV" formControlName="cVV" name="CVV" id="CVV" autocomplete="off" placeholder="Enter CVV" required><br>
+           
+             <span  class="text-danger">CVV is required</span>
+            </div>
+          </div>
+         </div>
+    
+              <div class="cards">
+                  <img src="https://www.pngall.com/wp-content/uploads/2016/07/Mastercard-Download-PNG.png" alt="">
+                  <img src="https://seeklogo.com/images/V/visa-logo-6F4057663D-seeklogo.com.png" alt="">
+                  <img src="https://www.kindpng.com/picc/m/44-440826_chad-hurley-paypal-logo-hd-png-download.png" alt="">
+              </div>
+              <br>
+           <button class="btn btn-primary btn-large"   style="border-radius: 5px;">Pay</button>
+    </form>
+    </div>
+
+  </section> -->

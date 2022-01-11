@@ -1,0 +1,32 @@
+<div class="bootstrap-wrapper">
+<div class="container text-center mt">
+<h3>Admin dashboard</h3>
+    <button (click)=" getTicketDetails()" mat-raised-button color="primary">View Reservation</button>
+    <button  routerLink="addTrain"    style="margin-left: 10px;" mat-raised-button color="accent">Add Train</button>
+    <!-- <button  routerLink="deleteTrain"   style="margin-left: 10px;"  mat-raised-button color="warn">Delete Train</button> -->
+    
+    <table  class= "table table-striped">
+        <thead>
+            <tr>
+                <th>Reservation Id</th>
+                <th>Number of Tickets</th>
+                <th>Adults</th>
+                <th>Age</th>
+                <th>Start Station</th>
+                <th>End Station</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor = "let train of ticket">
+                <td> {{ train.id }}</td>
+                <td> {{ train.noOfTickets }}</td>
+                <td> {{ train.adults }}</td>
+                <td> {{ train.age }}</td>
+                <td> {{ train.startStation }}</td>
+                <td> {{ train.endStation }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
